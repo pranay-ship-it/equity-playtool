@@ -1,0 +1,328 @@
+.equity-playtool {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #F6FBFF, #ffffff);
+  padding: 2rem 1.5rem;
+  overflow: visible;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #000202;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #AA3BFF;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #F6FBFF;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000202;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 0.75rem;
+}
+
+.input-label {
+  display: block;
+  font-weight: 600;
+  color: #000202;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.input-value {
+  color: #AA3BFF;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.range-input {
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0.75rem 0;
+}
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #AA3BFF;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.range-input::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #AA3BFF;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.range-input:focus {
+  outline: none;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  color: #AA3BFF;
+  font-size: 0.75rem;
+}
+
+.chart-container {
+  height: 250px;
+  margin: 0.5rem 0;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #F6FBFF;
+  padding: 1rem;
+}
+
+.chart-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000202;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.value-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.value-usd {
+  color: #06B58D;
+  font-weight: 500;
+}
+
+.value-inr {
+  color: #06B58D;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.table-container {
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: visible;
+}
+
+.table th {
+  position: relative;
+  overflow: visible;
+  padding: 1rem;
+  color: #000202;
+  font-size: 0.75rem;
+  border-bottom: 1px solid rgba(170, 59, 255, 0.1);
+}
+
+.table td {
+  padding: 0.75rem 1.5rem;
+  color: #000202;
+  border-bottom: 1px solid rgba(170, 59, 255, 0.1);
+  white-space: nowrap;
+}
+
+.table tr:hover {
+  background: rgba(246, 251, 255, 0.3);
+}
+
+.input-number {
+  width: 100px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(170, 59, 255, 0.2);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #000202;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.input-number:focus {
+  outline: none;
+  border-color: #AA3BFF;
+  box-shadow: 0 0 0 2px rgba(170, 59, 255, 0.1);
+}
+
+.input-number.valuation {
+  width: 130px;
+}
+
+.equity-value {
+  color: #AA3BFF;
+  font-weight: 500;
+}
+
+.monetary-value {
+  color: #06B58D;
+  font-weight: 500;
+}
+
+.percent-symbol {
+  color: #AA3BFF;
+  margin-left: 0.25rem;
+}
+
+.valuation-format {
+  color: #000202;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  opacity: 0.7;
+}
+
+/* Chart customization */
+.recharts-cartesian-axis-tick-value {
+  font-size: 11px;
+}
+
+.recharts-tooltip-wrapper {
+  background: #F6FBFF !important;
+  border: 1px solid #AA3BFF !important;
+  border-radius: 6px !important;
+  padding: 0.5rem !important;
+  font-size: 0.75rem !important;
+}
+
+/* New tooltip styles */
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.tooltip-icon {
+  cursor: help;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(170, 59, 255, 0.1);
+  color: #AA3BFF;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  position: absolute;
+  z-index: 9999;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 1rem;
+  background: #000202;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  white-space: normal;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000202 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .equity-playtool {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .table td, .table th {
+    padding: 0.75rem;
+  }
+
+  .input-number {
+    width: 80px;
+  }
+
+  .input-number.valuation {
+    width: 110px;
+  }
+}
